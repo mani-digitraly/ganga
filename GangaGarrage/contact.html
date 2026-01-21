@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact Us - Ganga Car Care | Car Service Center in Chennai</title>
+  <meta name="description" content="Visit Ganga Car Care in Pallavaram, Chennai. Get directions, working hours, and contact information.">
+  
+  <link rel="icon" type="image/svg+xml" href="assets/images/favicon.svg">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;500;600;700;800&family=DM+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+  
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            'accent': '#FF4D00',
+            'accent-light': '#FF7A3D',
+            'dark': '#111111',
+            'card': '#ffffff',
+            'border': '#e5e5e5',
+            'cream': '#FAFAF9',
+            'surface': '#F5F5F4',
+          },
+          fontFamily: {
+            'display': ['Syne', 'sans-serif'],
+            'body': ['DM Sans', 'sans-serif'],
+          },
+        }
+      }
+    }
+  </script>
+  <link rel="stylesheet" href="css/custom.css">
+</head>
+<body class="font-body bg-cream text-dark overflow-x-hidden">
+  
+  <div class="loader"><div class="loader-spinner"></div></div>
+
+  <!-- Header -->
+  <header class="fixed top-0 left-0 right-0 z-50 header-transparent">
+    <nav class="max-w-7xl mx-auto px-6 py-5">
+      <div class="flex items-center justify-between">
+        <a href="index.html" class="flex items-center gap-3 group">
+          <div class="logo-icon">
+            <svg class="w-10 h-10" viewBox="0 0 48 48" fill="none">
+              <path d="M4 32c4-4 8 0 12-4s8 0 12-4 8 0 12-4" stroke="#FF4D00" stroke-width="2.5" stroke-linecap="round" opacity="0.6"/>
+              <path d="M4 36c4-4 8 0 12-4s8 0 12-4 8 0 12-4" stroke="#FF4D00" stroke-width="2.5" stroke-linecap="round" opacity="0.4"/>
+              <path d="M8 26h32c1.1 0 2-.9 2-2v-4c0-1.1-.9-2-2-2H28l-3-6H15l-3 6H8c-1.1 0-2 .9-2 2v4c0 1.1.9 2 2 2z" fill="#FF4D00"/>
+              <path d="M16 14h10l2 4H14l2-4z" fill="white" opacity="0.3"/>
+              <circle cx="14" cy="26" r="3" fill="#1F2937"/>
+              <circle cx="34" cy="26" r="3" fill="#1F2937"/>
+              <circle cx="42" cy="10" r="2" fill="#FF4D00" class="animate-pulse"/>
+              <circle cx="38" cy="6" r="1.5" fill="#FF4D00" opacity="0.7"/>
+            </svg>
+          </div>
+          <div class="flex flex-col">
+            <span class="text-lg font-display font-bold tracking-tight text-dark leading-tight">Ganga</span>
+            <span class="text-xs font-medium tracking-wider uppercase text-dark/70">Car Care</span>
+          </div>
+        </a>
+
+        <div class="hidden md:flex items-center gap-10">
+          <a href="services.html" class="nav-link font-medium text-neutral-600 hover:text-dark">Services</a>
+          <a href="cab.html" class="nav-link font-medium text-neutral-600 hover:text-dark">Cab Service</a>
+          <a href="contact.html" class="nav-link font-medium text-accent">Contact</a>
+          <a href="https://wa.me/918124672700" target="_blank" class="btn-primary px-6 py-3 rounded-xl font-semibold text-white inline-flex items-center gap-2">
+            <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/></svg>
+            WhatsApp
+          </a>
+        </div>
+
+        <button class="hamburger md:hidden flex flex-col gap-1.5 p-2" aria-label="Menu">
+          <span class="w-6 h-0.5 bg-dark rounded-full"></span>
+          <span class="w-6 h-0.5 bg-dark rounded-full"></span>
+          <span class="w-6 h-0.5 bg-dark rounded-full"></span>
+        </button>
+      </div>
+    </nav>
+
+    <div class="mobile-menu fixed top-0 right-0 w-72 h-full bg-white/95 backdrop-blur-xl border-l border-border md:hidden">
+      <div class="p-8 pt-24 flex flex-col gap-6">
+        <a href="services.html" class="text-lg font-medium text-neutral-600 hover:text-dark py-2">Services</a>
+        <a href="cab.html" class="text-lg font-medium text-neutral-600 hover:text-dark py-2">Cab Service</a>
+        <a href="contact.html" class="text-lg font-medium text-accent py-2">Contact</a>
+        <a href="https://wa.me/918124672700" target="_blank" class="btn-primary px-6 py-4 rounded-xl font-semibold text-white text-center mt-4">WhatsApp Us</a>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <!-- Page Header -->
+    <section class="pt-32 pb-16 bg-surface relative">
+      <div class="max-w-7xl mx-auto px-6 relative">
+        <div class="max-w-3xl">
+          <a href="index.html" class="inline-flex items-center gap-2 text-neutral-500 hover:text-dark mb-6 transition-colors">
+            <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7"/>
+            </svg>
+            Back to Home
+          </a>
+          <h1 class="font-display text-5xl md:text-6xl font-bold mb-6 text-dark gsap-slide-up">Contact Us</h1>
+          <p class="text-neutral-600 text-xl leading-relaxed gsap-slide-up">
+            Visit us at our service center or reach out via WhatsApp. We're here to help with all your car care needs.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Info -->
+    <section class="py-16 bg-white">
+      <div class="max-w-7xl mx-auto px-6">
+        <div class="grid lg:grid-cols-2 gap-12">
+          
+          <!-- Info Cards -->
+          <div class="space-y-6">
+            <!-- Location -->
+            <div class="service-card-large rounded-2xl p-8">
+              <div class="flex items-start gap-5">
+                <div class="w-14 h-14 rounded-xl bg-accent/10 flex items-center justify-center flex-shrink-0">
+                  <svg class="w-7 h-7 text-accent" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"/>
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"/>
+                  </svg>
+                </div>
+                <div>
+                  <h3 class="font-display text-xl font-bold mb-3 text-dark">Our Location</h3>
+                  <p class="text-neutral-700 text-lg leading-relaxed">
+                    Officer Line, Near EB Office Road,<br>
+                    Pallavaram, Chennai - 600043<br>
+                    Tamil Nadu, India
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <!-- Working Hours -->
+            <div class="service-card-large rounded-2xl p-8">
+              <div class="flex items-start gap-5">
+                <div class="w-14 h-14 rounded-xl bg-accent/10 flex items-center justify-center flex-shrink-0">
+                  <svg class="w-7 h-7 text-accent" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"/>
+                  </svg>
+                </div>
+                <div>
+                  <h3 class="font-display text-xl font-bold mb-3 text-dark">Working Hours</h3>
+                  <div class="space-y-2 text-neutral-700">
+                    <div class="flex justify-between">
+                      <span>Monday - Saturday</span>
+                      <span class="text-dark font-medium">9:00 AM - 8:00 PM</span>
+                    </div>
+                    <div class="flex justify-between">
+                      <span>Sunday</span>
+                      <span class="text-dark font-medium">10:00 AM - 6:00 PM</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- WhatsApp CTA -->
+            <div class="service-card-large rounded-2xl p-8 bg-gradient-to-br from-accent/10 to-transparent border-accent/20">
+              <div class="flex items-start gap-5">
+                <div class="w-14 h-14 rounded-xl bg-accent/20 flex items-center justify-center flex-shrink-0">
+                  <svg class="w-7 h-7 text-accent" fill="currentColor" viewBox="0 0 24 24">
+                    <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/>
+                  </svg>
+                </div>
+                <div class="flex-1">
+                  <h3 class="font-display text-xl font-bold mb-3 text-dark">Quick Contact</h3>
+                  <p class="text-neutral-600 mb-4">The fastest way to reach us is through WhatsApp.</p>
+                  <a href="https://wa.me/918124672700" target="_blank" class="btn-primary px-6 py-3 rounded-xl font-semibold text-white inline-flex items-center gap-2">
+                    <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/></svg>
+                    Message on WhatsApp
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Map -->
+          <div class="map-container rounded-2xl overflow-hidden h-[500px] lg:h-auto">
+            <!-- <iframe 
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3888.5797989697147!2d80.14664897507772!3d12.967534087352844!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a525fac5c5a5555%3A0x5555555555555555!2sPallavaram%2C%20Chennai%2C%20Tamil%20Nadu!5e0!3m2!1sen!2sin!4v1699999999999!5m2!1sen!2sin"
+              width="100%" 
+              height="100%" 
+              style="border:0; min-height: 500px;" 
+              allowfullscreen="" 
+              loading="lazy"
+              title="Location">
+            </iframe> -->
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2386.9123707010513!2d80.15470222072818!3d12.969643897839312!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a525f102ac21063%3A0x2d86080a5d2e2965!2sGANGA%20CAR%20CARE!5e0!3m2!1sen!2sin!4v1768559990755!5m2!1sen!2sin" 
+            width="100%" 
+            height="100%" 
+            style="border:0; min-height: 500px;" 
+            allowfullscreen="" 
+            loading="lazy" 
+            referrerpolicy="no-referrer-when-downgrade"
+            title="Location">
+          </iframe>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="py-12 bg-dark text-white">
+    <div class="max-w-7xl mx-auto px-6">
+      <div class="flex flex-col md:flex-row items-center justify-between gap-6">
+        <div class="flex items-center gap-3">
+          <svg class="w-8 h-8" viewBox="0 0 48 48" fill="none">
+            <path d="M4 32c4-4 8 0 12-4s8 0 12-4 8 0 12-4" stroke="#FF4D00" stroke-width="2.5" stroke-linecap="round" opacity="0.6"/>
+            <path d="M8 26h32c1.1 0 2-.9 2-2v-4c0-1.1-.9-2-2-2H28l-3-6H15l-3 6H8c-1.1 0-2 .9-2 2v4c0 1.1.9 2 2 2z" fill="#FF4D00"/>
+            <circle cx="14" cy="26" r="3" fill="white"/>
+            <circle cx="34" cy="26" r="3" fill="white"/>
+          </svg>
+          <span class="font-display font-bold">Ganga <span class="font-normal opacity-70">Car Care</span></span>
+        </div>
+        <div class="flex items-center gap-8">
+          <a href="services.html" class="text-neutral-400 hover:text-white transition-colors">Services</a>
+          <a href="cab.html" class="text-neutral-400 hover:text-white transition-colors">Cab</a>
+          <a href="contact.html" class="text-accent">Contact</a>
+        </div>
+        <p class="text-neutral-500 text-sm">© <span id="year"></span> Ganga Car Care</p>
+      </div>
+    </div>
+  </footer>
+
+  <a href="https://wa.me/918124672700" target="_blank" class="whatsapp-float" aria-label="WhatsApp">
+    <svg class="w-7 h-7 text-white" fill="currentColor" viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/></svg>
+  </a>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+  <script src="js/main.js"></script>
+  <script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+</body>
+</html>
