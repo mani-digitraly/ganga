@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 80">
+  <defs>
+    <linearGradient id="logoGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#1E40AF"/>
+      <stop offset="100%" style="stop-color:#3B82F6"/>
+    </linearGradient>
+    <linearGradient id="textGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#FFFFFF"/>
+      <stop offset="50%" style="stop-color:#3B82F6"/>
+      <stop offset="100%" style="stop-color:#F97316"/>
+    </linearGradient>
+  </defs>
+  
+  <!-- Logo Icon Container -->
+  <rect x="5" y="10" width="60" height="60" rx="12" fill="url(#logoGrad)"/>
+  
+  <!-- Car Icon -->
+  <path d="M52 45H50L47 35C46.5 33 44.5 32 42.5 32H27.5C25.5 32 23.5 33 23 35L20 45H18C16.5 45 15 46.5 15 48V52C15 53.5 16.5 55 18 55H19.5C19.5 58.5 22.5 61.5 26 61.5C29.5 61.5 32.5 58.5 32.5 55H37.5C37.5 58.5 40.5 61.5 44 61.5C47.5 61.5 50.5 58.5 50.5 55H52C53.5 55 55 53.5 55 52V48C55 46.5 53.5 45 52 45ZM26 58C24 58 22.5 56.5 22.5 54.5C22.5 52.5 24 51 26 51C28 51 29.5 52.5 29.5 54.5C29.5 56.5 28 58 26 58ZM44 58C42 58 40.5 56.5 40.5 54.5C40.5 52.5 42 51 44 51C46 51 47.5 52.5 47.5 54.5C47.5 56.5 46 58 44 58ZM22 43L24.5 35.5C25 34.5 26 34 27 34H43C44 34 45 34.5 45.5 35.5L48 43H22Z" fill="white"/>
+  
+  <!-- Orange Accent -->
+  <circle cx="55" cy="20" r="8" fill="#F97316"/>
+  
+  <!-- Brand Text -->
+  <text x="80" y="42" font-family="Arial, sans-serif" font-size="24" font-weight="bold" fill="white">GANGA</text>
+  <text x="80" y="62" font-family="Arial, sans-serif" font-size="16" fill="#9CA3AF">CAR CARE</text>
+  
+  <!-- Tagline underline -->
+  <rect x="80" y="68" width="80" height="2" rx="1" fill="#F97316"/>
+</svg>
+

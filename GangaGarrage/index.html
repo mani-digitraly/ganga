@@ -1,0 +1,425 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  
+  <!-- SEO Meta Tags -->
+  <title>Ganga Car Care - Premium Car Service Center in Pallavaram, Chennai</title>
+  <meta name="description" content="Ganga Car Care offers professional car services in Pallavaram, Chennai. Water wash, tyre services, mechanical work, A/C services, tinkering & painting.">
+  <meta name="keywords" content="car service chennai, car wash pallavaram, car repair chennai, tyre service, car AC service, car painting, ganga car care">
+  <meta name="author" content="Ganga Car Care">
+  <meta name="robots" content="index, follow">
+  
+  <!-- Open Graph -->
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://gangacarcare.com/">
+  <meta property="og:title" content="Ganga Car Care - Car Services in Chennai">
+  <meta property="og:description" content="Your trusted destination for all car services in Pallavaram, Chennai.">
+  
+  <!-- Favicon -->
+  <link rel="icon" type="image/svg+xml" href="assets/images/favicon.svg">
+  
+  <!-- Canonical URL -->
+  <link rel="canonical" href="https://gangacarcare.com/">
+  
+  <!-- Google Fonts - Syne & DM Sans -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;500;600;700;800&family=DM+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+  
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            'accent': '#FF4D00',
+            'accent-light': '#FF7A3D',
+            'dark': '#111111',
+            'card': '#ffffff',
+            'border': '#e5e5e5',
+            'cream': '#FAFAF9',
+            'surface': '#F5F5F4',
+          },
+          fontFamily: {
+            'display': ['Syne', 'sans-serif'],
+            'body': ['DM Sans', 'sans-serif'],
+          },
+        }
+      }
+    }
+  </script>
+  
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="css/custom.css">
+  
+  <!-- Schema.org Structured Data -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "AutoRepair",
+    "name": "Ganga Car Care",
+    "url": "https://gangacarcare.com",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "Officer Line, Near EB Office Road",
+      "addressLocality": "Pallavaram",
+      "addressRegion": "Chennai",
+      "postalCode": "600043",
+      "addressCountry": "IN"
+    }
+  }
+  </script>
+</head>
+<body class="font-body bg-cream text-dark overflow-x-hidden">
+  
+  <!-- Loader -->
+  <div class="loader">
+    <div class="loader-spinner"></div>
+  </div>
+
+  <!-- Header -->
+  <header class="fixed top-0 left-0 right-0 z-50 header-hero">
+    <nav class="max-w-7xl mx-auto px-6 py-5">
+      <div class="flex items-center justify-between">
+        <!-- Logo -->
+        <a href="index.html" class="flex items-center gap-3 group">
+          <div class="logo-icon">
+            <!-- Car silhouette with water wave -->
+            <svg class="w-10 h-10" viewBox="0 0 48 48" fill="none">
+              <!-- Water wave base -->
+              <path d="M4 32c4-4 8 0 12-4s8 0 12-4 8 0 12-4" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" class="text-accent opacity-60"/>
+              <path d="M4 36c4-4 8 0 12-4s8 0 12-4 8 0 12-4" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" class="text-accent opacity-40"/>
+              <!-- Car body -->
+              <path d="M8 26h32c1.1 0 2-.9 2-2v-4c0-1.1-.9-2-2-2H28l-3-6H15l-3 6H8c-1.1 0-2 .9-2 2v4c0 1.1.9 2 2 2z" fill="currentColor" class="text-accent"/>
+              <!-- Car windows -->
+              <path d="M16 14h10l2 4H14l2-4z" fill="white" opacity="0.3"/>
+              <!-- Wheels -->
+              <circle cx="14" cy="26" r="3" fill="currentColor" class="header-logo-text"/>
+              <circle cx="34" cy="26" r="3" fill="currentColor" class="header-logo-text"/>
+              <!-- Water droplets -->
+              <circle cx="42" cy="10" r="2" fill="currentColor" class="text-accent animate-pulse"/>
+              <circle cx="38" cy="6" r="1.5" fill="currentColor" class="text-accent opacity-70"/>
+            </svg>
+          </div>
+          <div class="flex flex-col">
+            <span class="text-lg font-display font-bold tracking-tight header-logo-text leading-tight">Ganga</span>
+            <span class="text-xs font-medium tracking-wider uppercase header-logo-text opacity-70">Car Care</span>
+          </div>
+        </a>
+
+        <!-- Desktop Nav -->
+        <div class="hidden md:flex items-center gap-10">
+          <a href="services.html" class="nav-link-hero font-medium">Services</a>
+          <a href="cab.html" class="nav-link-hero font-medium">Cab Service</a>
+          <a href="contact.html" class="nav-link-hero font-medium">Contact</a>
+          <a href="https://wa.me/918124672700?text=Hi!%20I%20need%20car%20service." 
+             target="_blank"
+             class="btn-primary px-6 py-3 rounded-xl font-semibold text-white inline-flex items-center gap-2">
+            <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
+              <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/>
+            </svg>
+            WhatsApp
+          </a>
+        </div>
+
+        <!-- Mobile Menu Button -->
+        <button class="hamburger md:hidden flex flex-col gap-1.5 p-2" aria-label="Menu">
+          <span class="w-6 h-0.5 bg-white rounded-full hamburger-line"></span>
+          <span class="w-6 h-0.5 bg-white rounded-full hamburger-line"></span>
+          <span class="w-6 h-0.5 bg-white rounded-full hamburger-line"></span>
+        </button>
+      </div>
+    </nav>
+
+    <!-- Mobile Menu -->
+    <div class="mobile-menu fixed top-0 right-0 w-72 h-full bg-dark/95 backdrop-blur-xl border-l border-white/10 md:hidden">
+      <div class="p-8 pt-24 flex flex-col gap-6">
+        <a href="services.html" class="text-lg font-medium text-neutral-300 hover:text-white py-2">Services</a>
+        <a href="cab.html" class="text-lg font-medium text-neutral-300 hover:text-white py-2">Cab Service</a>
+        <a href="contact.html" class="text-lg font-medium text-neutral-300 hover:text-white py-2">Contact</a>
+        <a href="https://wa.me/918124672700" target="_blank"
+           class="btn-primary px-6 py-4 rounded-xl font-semibold text-white text-center mt-4">
+          WhatsApp Us
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <!-- Hero Section - Car Wash Theme -->
+    <section id="home" class="relative min-h-screen overflow-hidden">
+      <!-- Full Screen Gallery Background -->
+      <div class="absolute inset-0">
+        <div class="hero-bg-gallery">
+          <img src="https://images.unsplash.com/photo-1607860108855-64acf2078ed9?w=1920&q=80" alt="Car Washing" class="hero-bg-image active">
+          <img src="https://images.unsplash.com/photo-1520340356584-f9917d1eea6f?w=1920&q=80" alt="Car Detailing" class="hero-bg-image">
+          <img src="https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=1920&q=80" alt="Car Polish" class="hero-bg-image">
+          <img src="https://images.unsplash.com/photo-1597007066704-67bf2068d5b2?w=1920&q=80" alt="Interior Cleaning" class="hero-bg-image">
+        </div>
+        <div class="absolute inset-0 bg-dark/50"></div>
+      </div>
+
+      <!-- Content Overlay -->
+      <div class="relative max-w-7xl mx-auto px-6 min-h-screen flex items-end pb-5 lg:pb-32">
+        <div class="w-full">
+          <!-- Bottom Content Bar -->
+          <div class="glass-card rounded-3xl p-8 md:p-10 gsap-slide-up">
+            <div class="grid lg:grid-cols-12 gap-8 items-center">
+              
+              <!-- Main Text - Compact -->
+              <div class="lg:col-span-5">
+                <p class="text-accent font-semibold text-sm tracking-wider uppercase mb-3">Premium Car Care</p>
+                <h1 class="font-display text-3xl md:text-4xl lg:text-5xl font-bold text-white leading-tight mb-4">
+                  Make Your Car<br><span class="text-accent">Shine Again</span>
+                </h1>
+                <p class="text-neutral-300 text-base leading-relaxed">
+                  Professional car washing, detailing & maintenance services in Chennai.
+                </p>
+              </div>
+
+              <!-- Service Pills -->
+              <div class="lg:col-span-4">
+                <div class="flex flex-wrap gap-2">
+                  <span class="service-pill">Water Wash</span>
+                  <span class="service-pill">Interior Clean</span>
+                  <span class="service-pill">Polishing</span>
+                  <span class="service-pill">Ceramic Coating</span>
+                  <span class="service-pill">Full Detailing</span>
+                  <span class="service-pill">AC Service</span>
+                </div>
+              </div>
+
+              <!-- CTA -->
+              <div class="lg:col-span-3">
+                <a href="https://wa.me/918124672700?text=Hi!%20I%20want%20to%20book%20a%20car%20wash." 
+                   target="_blank"
+                   class="btn-primary w-full px-6 py-4 rounded-xl font-bold text-white inline-flex items-center justify-center gap-3 text-lg group mb-3">
+                  <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
+                    <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/>
+                  </svg>
+                  Book Now
+                </a>
+                <div class="flex items-center justify-center gap-6 text-sm text-neutral-400">
+                  <span><strong class="text-white">10+</strong> Years</span>
+                  <span><strong class="text-white">5K+</strong> Customers</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Gallery Dots -->
+          <div class="flex justify-center gap-3 mt-6">
+            <button class="hero-dot active" data-index="0"></button>
+            <button class="hero-dot" data-index="1"></button>
+            <button class="hero-dot" data-index="2"></button>
+            <button class="hero-dot" data-index="3"></button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Top Right - View Services Link -->
+      <a href="services.html" class="absolute top-28 right-8 hidden lg:flex items-center gap-2 text-white/70 hover:text-white transition-colors gsap-fade-in">
+        <span class="text-sm font-medium">View All Services</span>
+        <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"/>
+        </svg>
+      </a>
+    </section>
+
+    <!-- Quick Services Preview -->
+    <section class="py-24 bg-white relative">
+      <div class="max-w-7xl mx-auto px-6">
+        <div class="text-center mb-16">
+          <p class="text-accent font-semibold text-sm tracking-widest uppercase mb-4">What We Offer</p>
+          <h2 class="font-display text-4xl md:text-5xl font-bold text-dark">Our Services</h2>
+        </div>
+
+        <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+          <!-- Service Card 1 -->
+          <a href="services.html" class="service-card-light group rounded-2xl p-8 relative overflow-hidden">
+            <div class="absolute top-0 right-0 w-32 h-32 bg-accent/5 rounded-full -translate-y-1/2 translate-x-1/2 group-hover:scale-150 transition-transform duration-500"></div>
+            <div class="relative">
+              <div class="w-14 h-14 rounded-xl bg-accent/10 flex items-center justify-center mb-6 group-hover:bg-accent/20 transition-colors">
+                <svg class="w-7 h-7 text-accent" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19.428 15.428a2 2 0 00-1.022-.547l-2.387-.477a6 6 0 00-3.86.517l-.318.158a6 6 0 01-3.86.517L6.05 15.21a2 2 0 00-1.806.547M8 4h8l-1 1v5.172a2 2 0 00.586 1.414l5 5c1.26 1.26.367 3.414-1.415 3.414H4.828c-1.782 0-2.674-2.154-1.414-3.414l5-5A2 2 0 009 10.172V5L8 4z"/>
+                </svg>
+              </div>
+              <h3 class="font-display text-xl font-bold mb-3 text-dark">Water Wash & Detailing</h3>
+              <p class="text-neutral-600 mb-4">Complete exterior and interior cleaning with premium polish options.</p>
+              <span class="inline-flex items-center text-accent font-medium text-sm group-hover:gap-2 transition-all">
+                Learn more
+                <svg class="w-4 h-4 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/>
+                </svg>
+              </span>
+            </div>
+          </a>
+
+          <!-- Service Card 2 -->
+          <a href="services.html" class="service-card-light group rounded-2xl p-8 relative overflow-hidden">
+            <div class="absolute top-0 right-0 w-32 h-32 bg-accent/5 rounded-full -translate-y-1/2 translate-x-1/2 group-hover:scale-150 transition-transform duration-500"></div>
+            <div class="relative">
+              <div class="w-14 h-14 rounded-xl bg-accent/10 flex items-center justify-center mb-6 group-hover:bg-accent/20 transition-colors">
+                <svg class="w-7 h-7 text-accent" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10.325 4.317c.426-1.756 2.924-1.756 3.35 0a1.724 1.724 0 002.573 1.066c1.543-.94 3.31.826 2.37 2.37a1.724 1.724 0 001.065 2.572c1.756.426 1.756 2.924 0 3.35a1.724 1.724 0 00-1.066 2.573c.94 1.543-.826 3.31-2.37 2.37a1.724 1.724 0 00-2.572 1.065c-.426 1.756-2.924 1.756-3.35 0a1.724 1.724 0 00-2.573-1.066c-1.543.94-3.31-.826-2.37-2.37a1.724 1.724 0 00-1.065-2.572c-1.756-.426-1.756-2.924 0-3.35a1.724 1.724 0 001.066-2.573c-.94-1.543.826-3.31 2.37-2.37.996.608 2.296.07 2.572-1.065z"/>
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"/>
+                </svg>
+              </div>
+              <h3 class="font-display text-xl font-bold mb-3 text-dark">Mechanical Repairs</h3>
+              <p class="text-neutral-600 mb-4">From oil changes to complete engine overhauls by expert mechanics.</p>
+              <span class="inline-flex items-center text-accent font-medium text-sm group-hover:gap-2 transition-all">
+                Learn more
+                <svg class="w-4 h-4 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/>
+                </svg>
+              </span>
+            </div>
+          </a>
+
+          <!-- Service Card 3 -->
+          <a href="services.html" class="service-card-light group rounded-2xl p-8 relative overflow-hidden">
+            <div class="absolute top-0 right-0 w-32 h-32 bg-accent/5 rounded-full -translate-y-1/2 translate-x-1/2 group-hover:scale-150 transition-transform duration-500"></div>
+            <div class="relative">
+              <div class="w-14 h-14 rounded-xl bg-accent/10 flex items-center justify-center mb-6 group-hover:bg-accent/20 transition-colors">
+                <svg class="w-7 h-7 text-accent" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"/>
+                </svg>
+              </div>
+              <h3 class="font-display text-xl font-bold mb-3 text-dark">A/C & Electrical</h3>
+              <p class="text-neutral-600 mb-4">Climate control repairs and complete electrical diagnostics.</p>
+              <span class="inline-flex items-center text-accent font-medium text-sm group-hover:gap-2 transition-all">
+                Learn more
+                <svg class="w-4 h-4 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/>
+                </svg>
+              </span>
+            </div>
+          </a>
+        </div>
+
+        <div class="text-center mt-12">
+          <a href="services.html" class="btn-outline-light px-8 py-4 rounded-xl font-semibold text-neutral-700 inline-flex items-center gap-2">
+            View All Services
+            <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"/>
+            </svg>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Cab Service Teaser -->
+    <section class="py-24 bg-surface relative overflow-hidden">
+      <div class="absolute inset-0 bg-gradient-to-r from-accent/5 via-transparent to-transparent"></div>
+      <div class="max-w-7xl mx-auto px-6 relative">
+        <div class="grid lg:grid-cols-2 gap-16 items-center">
+          <div>
+            <p class="text-accent font-semibold text-sm tracking-widest uppercase mb-4">Travel Anywhere</p>
+            <h2 class="font-display text-4xl md:text-5xl font-bold mb-6 text-dark">Need a Ride?</h2>
+            <p class="text-neutral-600 text-xl mb-8 leading-relaxed">
+              Reliable cab services across South India. 500+ trusted drivers ready for local trips, airport transfers, or long-distance journeys.
+            </p>
+            
+            <div class="flex flex-wrap gap-3 mb-10">
+              <span class="px-4 py-2 bg-white border border-neutral-200 rounded-full text-sm text-neutral-700">Local Trips</span>
+              <span class="px-4 py-2 bg-white border border-neutral-200 rounded-full text-sm text-neutral-700">Long Distance</span>
+              <span class="px-4 py-2 bg-white border border-neutral-200 rounded-full text-sm text-neutral-700">Airport Pickup</span>
+              <span class="px-4 py-2 bg-white border border-neutral-200 rounded-full text-sm text-neutral-700">24/7 Available</span>
+            </div>
+
+            <a href="cab.html" class="btn-primary px-8 py-4 rounded-xl font-semibold text-white inline-flex items-center gap-3">
+              Book a Cab
+              <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"/>
+              </svg>
+            </a>
+          </div>
+
+          <div class="hidden lg:flex justify-center">
+            <div class="cab-visual-light">
+              <div class="cab-icon-large-light">
+                <svg class="w-32 h-32 text-accent" fill="currentColor" viewBox="0 0 24 24">
+                  <path d="M18.92 6.01C18.72 5.42 18.16 5 17.5 5h-11c-.66 0-1.21.42-1.42 1.01L3 12v8c0 .55.45 1 1 1h1c.55 0 1-.45 1-1v-1h12v1c0 .55.45 1 1 1h1c.55 0 1-.45 1-1v-8l-2.08-5.99zM6.5 16c-.83 0-1.5-.67-1.5-1.5S5.67 13 6.5 13s1.5.67 1.5 1.5S7.33 16 6.5 16zm11 0c-.83 0-1.5-.67-1.5-1.5s.67-1.5 1.5-1.5 1.5.67 1.5 1.5-.67 1.5-1.5 1.5zM5 11l1.5-4.5h11L19 11H5z"/>
+                </svg>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="py-24 bg-white">
+      <div class="max-w-4xl mx-auto px-6 text-center">
+        <h2 class="font-display text-4xl md:text-5xl font-bold mb-6 text-dark">Ready to get started?</h2>
+        <p class="text-neutral-600 text-xl mb-10">
+          Contact us today and experience the best car care in Chennai.
+        </p>
+        <div class="flex flex-wrap justify-center gap-4">
+          <a href="https://wa.me/918124672700?text=Hi!%20I%20need%20car%20service." 
+             target="_blank"
+             class="btn-primary px-8 py-4 rounded-xl font-semibold text-white inline-flex items-center gap-3 text-lg">
+            <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
+              <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/>
+            </svg>
+            WhatsApp Us
+          </a>
+          <a href="contact.html" class="btn-outline px-8 py-4 rounded-xl font-semibold text-neutral-300">
+            Visit Location
+          </a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="py-12 bg-dark text-white">
+    <div class="max-w-7xl mx-auto px-6">
+      <div class="flex flex-col md:flex-row items-center justify-between gap-6">
+        <div class="flex items-center gap-3">
+          <svg class="w-8 h-8" viewBox="0 0 48 48" fill="none">
+            <path d="M4 32c4-4 8 0 12-4s8 0 12-4 8 0 12-4" stroke="#FF4D00" stroke-width="2.5" stroke-linecap="round" opacity="0.6"/>
+            <path d="M8 26h32c1.1 0 2-.9 2-2v-4c0-1.1-.9-2-2-2H28l-3-6H15l-3 6H8c-1.1 0-2 .9-2 2v4c0 1.1.9 2 2 2z" fill="#FF4D00"/>
+            <circle cx="14" cy="26" r="3" fill="white"/>
+            <circle cx="34" cy="26" r="3" fill="white"/>
+          </svg>
+          <span class="font-display font-bold">Ganga <span class="font-normal opacity-70">Car Care</span></span>
+        </div>
+        <div class="flex items-center gap-8">
+          <a href="services.html" class="text-neutral-400 hover:text-white transition-colors">Services</a>
+          <a href="cab.html" class="text-neutral-400 hover:text-white transition-colors">Cab</a>
+          <a href="contact.html" class="text-neutral-400 hover:text-white transition-colors">Contact</a>
+        </div>
+        <p class="text-neutral-500 text-sm">
+          © <span id="year"></span> Ganga Car Care. All rights reserved.
+        </p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Floating WhatsApp -->
+  <a href="https://wa.me/918124672700?text=Hi!%20I%20need%20car%20service." 
+     target="_blank"
+     class="whatsapp-float"
+     aria-label="WhatsApp">
+    <svg class="w-7 h-7 text-white" fill="currentColor" viewBox="0 0 24 24">
+      <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/>
+    </svg>
+  </a>
+
+  <!-- GSAP -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+  
+  <!-- Main JS -->
+  <script src="js/main.js"></script>
+  
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
