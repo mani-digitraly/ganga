@@ -1,0 +1,586 @@
+/* ================================================
+   GANGA CAR CARE - Light Theme Styles
+   ================================================ */
+
+:root {
+  --accent: #FF4D00;
+  --accent-light: #FF7A3D;
+  --dark: #111111;
+  --card-bg: #ffffff;
+  --border-color: #e5e5e5;
+  --cream: #FAFAF9;
+  --surface: #F5F5F4;
+  --text-primary: #111111;
+  --text-secondary: #525252;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Minimal Scrollbar */
+::-webkit-scrollbar {
+  width: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--cream);
+}
+
+::-webkit-scrollbar-thumb {
+  background: #d4d4d4;
+  border-radius: 3px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #a3a3a3;
+}
+
+/* ================================================
+   HEADER
+   ================================================ */
+
+.header-transparent {
+  background: transparent;
+  transition: all 0.3s ease;
+}
+
+.header-transparent.scrolled {
+  background: rgba(250, 250, 249, 0.95);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
+}
+
+/* Hero Header (for homepage with dark hero) */
+.header-hero {
+  background: transparent;
+  transition: all 0.3s ease;
+}
+
+.header-hero .header-logo-text {
+  color: white;
+  transition: color 0.3s ease;
+}
+
+/* Logo Icon */
+.logo-icon {
+  transition: transform 0.3s ease;
+}
+
+.group:hover .logo-icon {
+  transform: translateX(3px);
+}
+
+.header-hero .nav-link-hero {
+  color: rgba(255, 255, 255, 0.8);
+  transition: color 0.3s ease;
+}
+
+.header-hero .nav-link-hero:hover {
+  color: white;
+}
+
+.header-hero .hamburger-line {
+  background: white;
+  transition: background 0.3s ease;
+}
+
+.header-hero.scrolled {
+  background: rgba(250, 250, 249, 0.95);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+}
+
+.header-hero.scrolled .header-logo-text {
+  color: var(--dark);
+}
+
+.header-hero.scrolled .nav-link-hero {
+  color: #525252;
+}
+
+.header-hero.scrolled .nav-link-hero:hover {
+  color: var(--dark);
+}
+
+.header-hero.scrolled .hamburger-line {
+  background: var(--dark);
+}
+
+/* ================================================
+   BUTTONS
+   ================================================ */
+
+.btn-primary {
+  background: var(--accent);
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  box-shadow: 0 4px 14px -3px rgba(255, 77, 0, 0.4);
+}
+
+.btn-primary:hover {
+  background: var(--accent-light);
+  transform: translateY(-2px);
+  box-shadow: 0 8px 25px -5px rgba(255, 77, 0, 0.5);
+}
+
+.btn-outline {
+  border: 2px solid #333;
+  background: transparent;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.btn-outline:hover {
+  border-color: var(--accent);
+  color: var(--accent);
+  background: rgba(255, 77, 0, 0.05);
+}
+
+.btn-outline-light {
+  border: 2px solid #d4d4d4;
+  background: transparent;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.btn-outline-light:hover {
+  border-color: var(--accent);
+  color: var(--accent);
+  background: rgba(255, 77, 0, 0.05);
+}
+
+/* ================================================
+   NAVIGATION
+   ================================================ */
+
+.nav-link {
+  position: relative;
+  transition: color 0.3s ease;
+}
+
+.nav-link::after {
+  content: '';
+  position: absolute;
+  bottom: -4px;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background: var(--accent);
+  transition: width 0.3s ease;
+}
+
+.nav-link:hover::after {
+  width: 100%;
+}
+
+.mobile-menu {
+  transform: translateX(100%);
+  transition: transform 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.mobile-menu.active {
+  transform: translateX(0);
+}
+
+.hamburger span {
+  transition: all 0.3s ease;
+}
+
+.hamburger.active span:nth-child(1) {
+  transform: rotate(45deg) translate(5px, 5px);
+}
+
+.hamburger.active span:nth-child(2) {
+  opacity: 0;
+}
+
+.hamburger.active span:nth-child(3) {
+  transform: rotate(-45deg) translate(7px, -6px);
+}
+
+/* ================================================
+   HERO SECTION - Car Wash Theme
+   ================================================ */
+
+/* Water Drops Animation */
+.water-drops {
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  overflow: hidden;
+}
+
+.drop {
+  position: absolute;
+  width: 10px;
+  height: 10px;
+  background: rgba(255, 255, 255, 0.3);
+  border-radius: 50%;
+  animation: dropFall linear infinite;
+}
+
+.drop::after {
+  content: '';
+  position: absolute;
+  width: 4px;
+  height: 20px;
+  background: linear-gradient(to bottom, rgba(255,255,255,0.4), transparent);
+  border-radius: 50%;
+  top: -20px;
+  left: 3px;
+}
+
+.drop-1 { left: 10%; animation-duration: 4s; animation-delay: 0s; }
+.drop-2 { left: 30%; animation-duration: 3.5s; animation-delay: 1s; }
+.drop-3 { left: 50%; animation-duration: 4.5s; animation-delay: 0.5s; }
+.drop-4 { left: 70%; animation-duration: 3s; animation-delay: 1.5s; }
+.drop-5 { left: 90%; animation-duration: 4s; animation-delay: 2s; }
+
+@keyframes dropFall {
+  0% { top: -50px; opacity: 0; }
+  10% { opacity: 1; }
+  90% { opacity: 1; }
+  100% { top: 100vh; opacity: 0; }
+}
+
+/* Hero Background Gallery */
+.hero-bg-gallery {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+.hero-bg-image {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  opacity: 0;
+  transition: opacity 1.2s ease-in-out;
+  transform: scale(1.05);
+}
+
+.hero-bg-image.active {
+  opacity: 1;
+  animation: kenBurns 8s ease-in-out forwards;
+}
+
+@keyframes kenBurns {
+  0% { transform: scale(1.05); }
+  100% { transform: scale(1); }
+}
+
+/* Glass Card */
+.glass-card {
+  background: rgba(0, 0, 0, 0.4);
+  backdrop-filter: blur(20px);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+/* Service Pills */
+.service-pill {
+  display: inline-block;
+  padding: 8px 16px;
+  background: rgba(255, 255, 255, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  border-radius: 50px;
+  color: white;
+  font-size: 13px;
+  font-weight: 500;
+  transition: all 0.3s ease;
+}
+
+.service-pill:hover {
+  background: var(--accent);
+  border-color: var(--accent);
+  transform: translateY(-2px);
+}
+
+/* Hero Dots */
+.hero-dot {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.3);
+  border: none;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.hero-dot:hover {
+  background: rgba(255, 255, 255, 0.6);
+}
+
+.hero-dot.active {
+  background: var(--accent);
+  width: 24px;
+  border-radius: 4px;
+}
+
+/* Scroll Indicator Light */
+.scroll-indicator-light {
+  width: 24px;
+  height: 40px;
+  border: 2px solid rgba(255, 255, 255, 0.3);
+  border-radius: 12px;
+  position: relative;
+  margin: 0 auto;
+}
+
+.scroll-indicator-light .scroll-dot {
+  position: absolute;
+  top: 6px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 4px;
+  height: 8px;
+  background: var(--accent);
+  border-radius: 2px;
+  animation: scrollBounce 2s ease-in-out infinite;
+}
+
+.hero-gradient {
+  background: linear-gradient(135deg, var(--accent) 0%, var(--accent-light) 50%, #FFB347 100%);
+}
+
+/* Scroll Indicator */
+.scroll-indicator {
+  width: 24px;
+  height: 40px;
+  border: 2px solid #d4d4d4;
+  border-radius: 12px;
+  position: relative;
+}
+
+.scroll-dot {
+  position: absolute;
+  top: 6px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 4px;
+  height: 8px;
+  background: var(--accent);
+  border-radius: 2px;
+  animation: scrollBounce 2s ease-in-out infinite;
+}
+
+@keyframes scrollBounce {
+  0%, 100% { transform: translateX(-50%) translateY(0); opacity: 1; }
+  50% { transform: translateX(-50%) translateY(12px); opacity: 0.3; }
+}
+
+/* ================================================
+   CARDS - Light Theme
+   ================================================ */
+
+.service-card-light {
+  background: var(--card-bg);
+  border: 1px solid var(--border-color);
+  transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.04);
+}
+
+.service-card-light:hover {
+  border-color: rgba(255, 77, 0, 0.3);
+  transform: translateY(-4px);
+  box-shadow: 0 20px 40px -15px rgba(0, 0, 0, 0.1);
+}
+
+.service-card-large {
+  background: var(--card-bg);
+  border: 1px solid var(--border-color);
+  transition: all 0.3s ease;
+}
+
+.service-card-large:hover {
+  border-color: #d4d4d4;
+}
+
+.feature-card {
+  background: var(--card-bg);
+  border: 1px solid var(--border-color);
+  transition: all 0.3s ease;
+}
+
+.feature-card:hover {
+  border-color: rgba(255, 77, 0, 0.2);
+}
+
+.stat-card {
+  background: linear-gradient(135deg, rgba(255, 77, 0, 0.05) 0%, transparent 100%);
+  border: 1px solid var(--border-color);
+}
+
+/* Cab Visual - Light */
+.cab-visual-light {
+  position: relative;
+  width: 300px;
+  height: 300px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.cab-icon-large-light {
+  position: relative;
+  padding: 40px;
+  background: rgba(255, 77, 0, 0.08);
+  border-radius: 50%;
+  border: 1px solid rgba(255, 77, 0, 0.15);
+}
+
+.cab-icon-large-light::before {
+  content: '';
+  position: absolute;
+  inset: -20px;
+  border: 1px dashed rgba(255, 77, 0, 0.2);
+  border-radius: 50%;
+  animation: rotate 20s linear infinite;
+}
+
+@keyframes rotate {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
+
+/* ================================================
+   WHATSAPP FLOAT
+   ================================================ */
+
+.whatsapp-float {
+  position: fixed;
+  bottom: 24px;
+  right: 24px;
+  z-index: 1000;
+  width: 60px;
+  height: 60px;
+  background: #25D366;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 4px 20px rgba(37, 211, 102, 0.4);
+  transition: all 0.3s ease;
+}
+
+.whatsapp-float:hover {
+  transform: scale(1.1);
+  box-shadow: 0 6px 30px rgba(37, 211, 102, 0.5);
+}
+
+/* ================================================
+   ANIMATIONS - GSAP Classes
+   ================================================ */
+
+.gsap-fade-in {
+  opacity: 0;
+}
+
+.gsap-slide-up {
+  opacity: 0;
+  transform: translateY(30px);
+}
+
+.gsap-scale-in {
+  opacity: 0;
+  transform: scale(0.9);
+}
+
+/* ================================================
+   MAP
+   ================================================ */
+
+.map-container {
+  border: 1px solid var(--border-color);
+  border-radius: 16px;
+  overflow: hidden;
+}
+
+/* ================================================
+   LOADER - Light Theme
+   ================================================ */
+
+.loader {
+  position: fixed;
+  inset: 0;
+  background: var(--cream);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 9999;
+  transition: opacity 0.4s ease, visibility 0.4s ease;
+}
+
+.loader.hidden {
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+}
+
+.loader-spinner {
+  width: 32px;
+  height: 32px;
+  border: 3px solid #e5e5e5;
+  border-top-color: var(--accent);
+  border-radius: 50%;
+  animation: spin 0.8s linear infinite;
+}
+
+@keyframes spin {
+  to { transform: rotate(360deg); }
+}
+
+/* ================================================
+   RESPONSIVE
+   ================================================ */
+
+@media (max-width: 1024px) {
+  .orb-1 {
+    width: 400px;
+    height: 400px;
+  }
+  
+  .orb-2 {
+    width: 300px;
+    height: 300px;
+  }
+  
+  .orb-3 {
+    width: 200px;
+    height: 200px;
+  }
+}
+
+@media (max-width: 768px) {
+  .whatsapp-float {
+    bottom: 20px;
+    right: 20px;
+    width: 56px;
+    height: 56px;
+  }
+  
+  .orb {
+    filter: blur(80px);
+    opacity: 0.3;
+  }
+}
+
+/* ================================================
+   SELECTION
+   ================================================ */
+
+::selection {
+  background: var(--accent);
+  color: white;
+}
+
+::-moz-selection {
+  background: var(--accent);
+  color: white;
+}
